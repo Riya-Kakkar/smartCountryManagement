@@ -1,44 +1,60 @@
 body{
        background:#e2e2e2!important;
+       margin: 0;
+       padding: 0:
 }
 
- .center-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
+ .container{
+  margin-top: 20px;
+ }
+
+  h2{
+  margin-bottom: 20px;
+  color:#343a40;
+  }
+
+   table{
+       background-color: #fff;
+       border-collapse: collapse;
+       width: 100%;
+       margin-bottom: 20px;
+    }
+
+    table th, table td {
+       border: 1px solid #dee2e6;
+       padding: 10px;
+       text-align: left;
+    }
+
+    .table th {
+       background-color: #007bff;
+       color: #fff;
+    }
+
+    .btn-primary{
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-warning{
+      background-color: #ffc107 ;
+      border-color: #ffc107;
+    }
+
+    .btn-danger{
+       background-color: #dc3545;
+       border-color: #dc3545;
+    }
+
+    .form-group {
+           margin-bottom: 15px;
         }
 
-        .container {
-            width: 100%;
-            max-width: 400px;
-        }
+    .form-group label{
+       font-weight: bold;
+    }
 
-        .input-box{
-        display:flex;
-        }
+  .text-danger{
+  font-size: 0.9em;
 
-
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
+  }

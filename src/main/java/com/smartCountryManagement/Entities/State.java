@@ -12,7 +12,8 @@ public class State {
     @Column(nullable = false)
     private String name;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "country_id")
     private Country country;
 
     public State() {
@@ -40,5 +41,10 @@ public class State {
 
     public void setCountry(Country country) {
         this.country = country;
+    }
+
+    public void setCountryById(int countryId) {
+        this.country = new Country();
+        this.country.setId(countryId);
     }
 }
